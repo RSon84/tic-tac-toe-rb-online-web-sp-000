@@ -97,7 +97,7 @@ end
 def play(board)
   turn_count = 0
  while turn_count < 9
-   puts "Please enter 1-9:"
+   puts "Please enter 1-9:" user_input
    turn(board)
    turn_count+=1
   end
