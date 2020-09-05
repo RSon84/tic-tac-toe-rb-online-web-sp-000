@@ -83,7 +83,6 @@ return board[won?(board).first]
 end
 
 def turn(board)
-  puts "Please enter 1-9:"
   user_input = gets.strip
   index = input_to_index(user_input)
   if valid_move?(board, index)
@@ -96,6 +95,7 @@ end
 
 
 def play(board)
+  puts "Please enter 1-9:"
   turn_count = 0
  while turn_count < 9
    turn(board)
